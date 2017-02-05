@@ -4,33 +4,56 @@
 		<title>Runtime Development</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="scripts/myScript.js"></script>	
+		<script src="scripts/ownership.js"></script>	
+		<script src="scripts/slideshow.js"></script>	
 	</head>
 	<body>
 		<div id="container">
 			<div id="header">
-				<ul class="navbar">
+				<ul class="nav-bar">
 					<li><a class="active" href="index.html">Home</a></li>
 					<li><a href="news.html">News/Blog</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
-				<p class="headerlogo">
+				<p class="header-logo">
 					<img src="images/runtime-text-blackandblue.png" alt="Runtime development text logo">
 				</p>
 			</div>
 			<div id="body">
 				<p>Welcome to the home of Runtime Development. We are under construction, please check back soon for more.</p>
+				<div class="slide-container">
+					<a class="slide-btn slide-left" onclick="plusDivs(-1)">&#10094;</a>
+					<a href="images/slideshow/origami.png" target="_blank">
+						<img class="mySlides" src="images/slideshow/origami.png">
+					</a>
+					<a href="images/slideshow/holo-sun.jpg" target="_blank">
+						<img class="mySlides" src="images/slideshow/holo-sun.jpg">
+					</a>
+					<a href="images/slideshow/holo-teapot.png" target="_blank">
+						<img class="mySlides" src="images/slideshow/holo-teapot.png">	
+					</a>
+					<a href="images/slideshow/holo-orc.png" target="_blank">
+						<img class="mySlides" src="images/slideshow/holo-orc.png">
+					</a>
+					<a href="images/slideshow/nyan-dog.png" target="_blank">
+						<img class="mySlides" src="images/slideshow/nyan-dog.png">
+					</a>
+					<a href="images/slideshow/spaceman.png" target="_blank">
+						<img class="mySlides" src="images/slideshow/spaceman.png">	
+					</a>
+					<a class="slide-btn slide-right" onclick="plusDivs(+1)">&#10095;</a>
+				</div>
 			</div>
 			<div id="footer">
-				<div class="footersection socialmedia">
+				<div class="footer-section social-media">
 					<a href="https://twitter.com/Drew_Runtime" target="_blank"><img src="images/twitter-logo-blue.png"></img></a>
 				</div>
-				<div class="footersection">
-					<img class="footerbadge" src="images/runtime-badgetext-blue-transparent.png" alt="Runtime development text badge">
+				<div class="footer-section">
+					<img class="footer-badge" src="images/runtime-badgetext-blue-transparent.png" alt="Runtime development text badge">
 					<div id="ownership"></div>
 				</div>
-				<div class="footersection socialmedia">
+				<div class="footer-section social-media">
 					<a href="http://www.facebook.com" target="_blank"><img src="images/facebook-logo-blue.png"></img></a>
 				</div>
 			</div>

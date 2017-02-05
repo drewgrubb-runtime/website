@@ -1,3 +1,4 @@
+/* Page Layout */
 html, body {
    margin:0;
    padding:0;
@@ -12,7 +13,7 @@ html, body {
    padding-top:10px;
 }
 #body {
-   padding:10px;
+   padding:0px;
    padding-bottom:95px;   /* Height of the footer */
 }
 #footer {
@@ -22,8 +23,59 @@ html, body {
    height:95px;   /* Height of the footer */
    background: #f3f3f3;
 }
+/* Page Layout */
 
-ul.navbar {
+/* Slideshow */
+.slide-btn {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:
+	center;
+	color:#fff;
+	background-color:#000;
+	position:relative;
+	overflow:hidden;
+	z-index:1;
+	padding:0;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:24px;
+}
+
+.slide-left {
+	position:absolute;
+	top:50%;
+	left:3px;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%);
+}
+
+.slide-right {
+	position:absolute;
+	top:50%;
+	right:3px;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%)
+}
+
+.slide-container{
+	position:relative;
+	padding:0;
+	width:50%;
+}
+
+.mySlides {
+	width:100%;
+}
+
+/* Slideshow */
+
+
+
+/* nav-bar */
+ul.nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,7 +90,7 @@ ul.navbar {
 li {
     float: left;
 }
-.navbar li a {
+.nav-bar li a {
     display: block;
     color: #666;
     text-align: center;
@@ -55,33 +107,37 @@ li a.active {
     background-color: #2286d8;
 }
 
-.dropbtn{
+.drop-btn{
 	Padding-left:10px;
 	Padding-right:10px;
 }
+/* nav-bar */
 
-.headerlogo{
+/* logo */
+.header-logo{
 	text-align:center;
 	padding-top:40px;
 }
+/* logo */
 
-.footersection{
+/* footer */
+.footer-section{
 	text-align:center;
 	display:inline;
 	height:100%;
-	width:31%;
+	width:33.333%;
 	float:left;
 }
 
-.socialmedia{
+.social-media{
 	line-height:120px;
 }
 
-.socialmedia img{
+.social-media img{
 	height:30px;
 }
 
-img.footerbadge {
+img.footer-badge {
 	width: 85px;
 	padding-top: 8px;
 }
@@ -94,3 +150,4 @@ img.footerbadge {
 div #footer p {
 	margin:0;
 }
+/* footer */
