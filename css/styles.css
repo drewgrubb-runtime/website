@@ -62,15 +62,52 @@ html, body {
 
 .slide-container{
 	position:relative;
+	z-index: 999;
 	padding:0;
-	width:50%;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .mySlides {
 	width:100%;
 }
-
 /* Slideshow */
+
+/* content layout */
+#content-container{
+	position:relative;
+	padding:0;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#block-wrapper{
+	font-size:0;
+}
+
+.block-container {
+	display:inline-block;
+	width:32.666%;
+	height:150px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:16px;
+}
+
+.left-block-container {
+	margin-right:1%
+}
+
+.center-block-container {
+
+}
+
+.right-block-container {
+	margin-left:1%
+}
+/* content layout */
 
 
 
@@ -91,6 +128,8 @@ li {
     float: left;
 }
 .nav-bar li a {
+	position: relative;
+	z-index: 99;
     display: block;
     color: #666;
     text-align: center;
