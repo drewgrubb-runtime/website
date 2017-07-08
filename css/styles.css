@@ -133,7 +133,7 @@ ul.nav-bar {
 	width: 100%;
 }
 
-li {
+ul.nav-bar li {
     float: left;
 }
 .nav-bar li a {
